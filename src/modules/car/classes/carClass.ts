@@ -1,4 +1,8 @@
+import { CarService } from "../../../layer";
+
 export default class CarClass {
+  carService: CarService;
+
   constructor({ carService }) {
     this.carService = carService;
   }

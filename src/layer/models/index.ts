@@ -2,7 +2,7 @@ import * as DataTypes from "sequelize";
 import * as models from "./models.js";
 import { Sequelize } from "sequelize";
 
-const db = {};
+const db = {} as any;
 db.Sequelize = DataTypes;
 
 export const loadingSequelize = async () => {
@@ -13,7 +13,7 @@ export const loadingSequelize = async () => {
     database: process.env.SEQ_DATABASE,
     host: process.env.SEQ_HOST,
     port: process.env.SEQ_PORT,
-  });
+  } as any);
 
   try {
     await sequelize.authenticate();

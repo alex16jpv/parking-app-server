@@ -1,4 +1,8 @@
 export class BasicService {
+  // TODO: Add types
+  model: any;
+  includes: any;
+
   constructor(model, includes) {
     this.model = model;
     this.includes = includes;
