@@ -6,8 +6,6 @@ export default class CarController {
   }
 
   async getCars(request, reply) {
-    console.log("Getting cars", request);
-
     return this.carClass.getCars();
   }
 }

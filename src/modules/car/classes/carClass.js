@@ -1,5 +1,8 @@
+import Models from "../../../layer/models/index.js";
+
 export default class CarClass {
-  getCars() {
-    return ["Ferrari", "Lamborghini", "Porsche!"];
+  async getCars() {
+    const foundCars = await Models.Car.findAll();
+    return foundCars;
   }
 }
