@@ -11,7 +11,8 @@
     "start:dev": "tsc --watch & nodemon ./dist/server.js",
     "db:migrate": "sequelize-cli db:migrate",
     "db:migrate:undo": "sequelize-cli db:migrate:undo",
-    "db:migrate:undo:all": "sequelize-cli db:migrate:undo:all"
+    "db:migrate:undo:all": "sequelize-cli db:migrate:undo:all",
+    "db:seed:all": "sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
